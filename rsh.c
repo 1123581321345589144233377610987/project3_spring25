@@ -184,9 +184,6 @@ int main() {
 				exit(EXIT_FAILURE);
 			}
 		
-			if (WIFEXITED(status)) {
-				printf("Spawned process exited with status %d\n", WEXITSTATUS(status));
-			}
 		
 			// Destroy spawn attributes
 			posix_spawnattr_destroy(&attr);
