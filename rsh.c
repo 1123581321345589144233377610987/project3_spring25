@@ -179,12 +179,7 @@ int main() {
         }
 		// Wait for the spawned process to terminate
 		if(index<9){
-			if (waitpid(pid, &status, 0) == -1) {
-				perror("waitpid failed");
-				exit(EXIT_FAILURE);
-			}
-		
-		
+
 			// Destroy spawn attributes
 			posix_spawnattr_destroy(&attr);
 		}
