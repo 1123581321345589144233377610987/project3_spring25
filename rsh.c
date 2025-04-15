@@ -175,7 +175,7 @@ int main() {
 					printf("%u: %s\n", i+1, allowed[i]);
 				}
 				break;
-			default: printf("invalid command %s\n", command);
+			default: printf("NOT ALLOWED!\n");
         }
 		// Wait for the spawned process to terminate
 		if(index<9){
