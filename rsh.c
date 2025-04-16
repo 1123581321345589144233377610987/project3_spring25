@@ -159,7 +159,7 @@ int main() {
 			//cd
 			case 9: 
 				if(numargs>1){
-					printf("cd: too many arguments\n");
+					printf("-rsh: cd: too many arguments\n");
 					break;
 				}
 				chdir(arrline[1]);
@@ -182,6 +182,8 @@ int main() {
 			if (waitpid(pid, &status, 0) == -1) {
 				perror("waitpid failed");
 			}
+		
+		
 			// Destroy spawn attributes
 			posix_spawnattr_destroy(&attr);
 		}
